@@ -13,48 +13,47 @@
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
     <body>
-    <!-- Side navigation -->
-    <!-- <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">HOME</a>
-    <a href="kingston.html">KINGSTON</a>
-    <a href="ottawa.html">OTTAWA</a>
-    <a href="about.html">ABOUT</a>
-</div>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
-<nav class="navbar">
-    <!-- <a class="navbar-brand" href="index.html">MAKI SUSHI</a> -->
-    <!-- <span class="hamburger">&#9776;</span> -->
+<!-- <nav class="navbar">
     <div class="navbar-nav">
         <a class="nav-item" href="index.html">HOME</a>
         <a class="nav-item" href="kingston.html">KINGSTON</a>
         <a class="nav-item" href="ottawa.html">OTTAWA</a>
         <a class="nav-item" href="about.html">ABOUT</a>
     </div>
-</nav>
+</nav> -->
+
+    <nav class="navbar">
+    <div class="navbar-brand">MAKI SUSHI</div>
+
+    <!-- Hamburger icon (visible only on mobile) -->
+    <button class="navbar-toggle" id="navbar-toggle">
+        ☰
+    </button>
+
+    <div class="navbar-nav" id="navbar-nav">
+        <a class="nav-item" href="index.html">HOME</a>
+        <a class="nav-item" href="kingston.html">KINGSTON</a>
+        <a class="nav-item" href="ottawa.html">OTTAWA</a>
+        <a class="nav-item" href="about.html">ABOUT</a>
+    </div>
+    </nav>
     <main class="content">
+    <div class="phone-buttons">
+    <a href="tel:+16135455656" class="phone-btn">ORDER KINGSTON</a>
+    <a href="tel:+16138363838" class="phone-btn">ORDER OTTAWA</a>
+    </div>
+
         <div class="container">
-            <br>
-            <br>
-        <h1>MAKI SUSHI</h1>
+        <h1 id="title">MAKI SUSHI</h1>
         <br>
         <br>
-        <br class="section-note"> We are a family-owned, local sushi restaurant dedicated to serving fresh, high-quality dishes. <br> Our goal is to dedicate culinary craftsmanship offering a blend of traditional Japanese flavors and contemporary culinary techniques. <br> Please click the location for menu details and additional information.</br>
+        <p class="intro"> We are a family-owned, local sushi restaurant dedicated to serving fresh, high-quality dishes. <br> Our goal is to dedicate culinary craftsmanship offering a blend of traditional Japanese flavors and contemporary culinary techniques. <br> Please click the location for menu details and additional information.</p>
         <br>
-        <br><br>
-        <br><br>
-        <h2>TAKE OUT MENUS:</h2>
-        <br><br>
+        <h2 class="section-title">OUR TAKE OUT MENUS</h2>
         <div class="button-link">
             <a href="./img/msn_letter_AUg_2025.pdf" class="button">KINGSTON</a>
             <a href="./img/makipoke_letter_Aug_2025.pdf" class="button">OTTAWA</a> 
-            <!-- <button class="downloadKingstonPDF">KINGSTON</button>
-            <button class="downloadOttawaPDF">OTTAWA</button> -->
         </div>
-
-
-        <!-- Menu gets rendered here by script.js -->
-        <div id="menuRoot" aria-live="polite"></div>
         </div>
     </main>
 </body>

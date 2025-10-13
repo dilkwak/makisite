@@ -13,42 +13,28 @@
     <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-    <!-- Left Drawer Nav
-    <nav id="mySidenav" class="sidenav" aria-hidden="true">
-    <button class="closebtn" aria-label="Close menu" onclick="closeNav()">&times;</button>
-    <a href="index.html">HOME</a>
-    <a href="kingston.html" aria-current="page">KINGSTON</a>
-    <a href="ottawa.html">OTTAWA</a>
-    <a href="about.html">ABOUT</a>
-    </nav> -->
+<nav class="navbar">
+  <div class="navbar-brand">MAKI SUSHI</div>
 
-    <!-- Backdrop (click to close) -->
-    <!-- <div id="backdrop" class="backdrop" onclick="closeNav()"></div>  -->
+  <!-- Hamburger icon (visible only on mobile) -->
+  <button class="navbar-toggle" id="navbar-toggle">
+    ☰
+  </button>
 
-    <!-- Hamburger (top-right, never covers title) -->
-    <!-- <button class="hamburger" aria-label="Open menu" onclick="openNav()">&#9776;</button> -->
-
-    <!-- <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html">HOME</a>
-    <a href="kingston.html">KINGSTON</a>
-    <a href="ottawa.html">OTTAWA</a>
-    <a href="about.html">ABOUT</a>
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
-
-    <nav class="navbar">
-    <!-- <a class="navbar-brand" href="index.html">MAKI SUSHI</a> -->
-    <!-- <span class="hamburger">&#9776;</span> -->
-    <div class="navbar-nav">
-        <a class="nav-item" href="index.html">HOME</a>
-        <a class="nav-item" href="kingston.html">KINGSTON</a>
-        <a class="nav-item" href="ottawa.html">OTTAWA</a>
-        <a class="nav-item" href="about.html">ABOUT</a>
-    </div>
-    </nav>
+  <div class="navbar-nav" id="navbar-nav">
+    <a class="nav-item" href="index.html">HOME</a>
+    <a class="nav-item" href="kingston.html">KINGSTON</a>
+    <a class="nav-item" href="ottawa.html">OTTAWA</a>
+    <a class="nav-item" href="about.html">ABOUT</a>
+  </div>
+</nav>
 
     <main class="container">
+    <div class="phone-buttons">
+    <a href="tel:+16135455656" class="phone-btn">ORDER KINGSTON</a>
+    <a href="tel:+16138363838" class="phone-btn">ORDER OTTAWA</a>
+    </div>
+
     <!-- Page Title -->
     <h1 class="section-title">MAKI</h1>
     <!-- MAKI -->
@@ -68,7 +54,7 @@
         </figure>
 
         <figure>
-        <img class="img" img src="img/sushi/spicy-california.png" alt="Spicy California Roll">
+        <img class="img" img src="img/sushi/spicyCal.png" alt="Spicy California Roll">
         <figcaption class="title">SPICY CALIFORNIA MAKI</figcaption>
         <figcaption class="desc">spicy crab + cucumber + spicy mayo</figcaption>
         <figcaption class="price">9.9</figcaption>
@@ -82,7 +68,7 @@
         </figure>
 
         <figure>
-        <img class="img" img src="img/sushi/spicy-california.png" alt="Shiitake mushroom roll">
+        <img class="img" img src="img/sushi/shiitake.png" alt="Shiitake mushroom roll">
         <figcaption class="title">SHIITAKE MAKI</figcaption>
         <figcaption class="desc">shiitake mushroom + cucumber + carrot</figcaption>
         <figcaption class="price">10.9</figcaption>
@@ -103,7 +89,7 @@
         </figure>
 
         <figure>
-        <img class="img" img src="img/sushi/tuna.png" alt="Tuna avocado roll">
+        <img class="img" img src="img/sushi/tunaAvo.png" alt="Tuna avocado roll">
         <figcaption class="title">TUNA AVOCADO MAKI</figcaption>
         <figcaption class="desc">tuna + avocado</figcaption>
         <figcaption class="price">10.9</figcaption>
@@ -214,8 +200,7 @@
         <figcaption class="price">17.9</figcaption>
         </figure>
     </div>
-
-    <h2 class="section-title">MAKI MIX</h2>
+    <!-- <h2 class="section-title">MAKI MIX</h2>
     <div class="menu-grid">
         <figure>
         <img class="img" img src="" alt="">
@@ -241,61 +226,235 @@
         <figcaption class="desc">tuna avocado maki + tuna nigiri + tuna sashimi</figcaption>
         <figcaption class="price">17.9</figcaption>
         </figure>
-            <figure>
+        <figure>
         <img class="img" img src="" alt="">
         <figcaption class="title">NIGIRI MIX</figcaption>
         <figcaption class="desc">salmon + tuna + shrimp + unagi nigiri</figcaption>
         <figcaption class="price">18.9</figcaption>
         </figure>
-            <figure>
+        <figure>
         <img class="img" img src="" alt="">
         <figcaption class="title">SASHIMI MIX</figcaption>
         <figcaption class="desc">salmon + tuna sashimi</figcaption>
         <figcaption class="price">18.9</figcaption>
         </figure>
-            <figure>
+        <figure>
         <img class="img" img src="" alt="">
         <figcaption class="title">SALMON MIX</figcaption>
         <figcaption class="desc">spicy salmon maki + salmon avocado maki + salmon nigiri + hosomaki</figcaption>
         <figcaption class="price">18.9</figcaption>
         </figure>
-            <figure>
+        <figure>
         <img class="img" img src="" alt="">
         <figcaption class="title">TUNA MIX</figcaption>
         <figcaption class="desc">spicy tuna maki + tuna avocado maki + tuna nigiri + hosomaki</figcaption>
         <figcaption class="price">19.9</figcaption>
         </figure>
-            <figure>
+        <figure>
         <img class="img" img src="" alt="">
         <figcaption class="title">BENTO BOX</figcaption>
         <figcaption class="desc">sashimi + maki roll + nigiri + chicken karaage</figcaption>
         <figcaption class="price">24.9</figcaption>
         </figure>  
+    </div> -->
+    <h2 class="section-title">MAKI MIX</h2>
+    <ul class="menu-list two-column">
+    <li>
+    <div class="item-info">
+        <span class="item-name">CALIFORNIA SALMON MIX</span>
+        <span class="item-desc">california maki + salmon nigiri</span>
     </div>
+    <span class="item-price">15.9</span>
+    </li>
 
-    <h2 class="section-title">ABURI SUSHI</h2>
-    <div class="menu-grid">
-        <figure>
-        <img class="img" img src="" alt="">
-        <figcaption class="title">ABURI SALMON</figcaption>
-        <figcaption class="desc">salmon + tempura shrimp + fish egg + teriyaki + mayo</figcaption>
-        <figcaption class="price">16.9</figcaption>
-        </figure>
-        <figure>
-        <img class="img" img src="" alt="">
-        <figcaption class="title">ABURI SHRIMP</figcaption>
-        <figcaption class="desc">shrimp + tempura shrimp + fish egg + teriyaki + mayo</figcaption>
-        <figcaption class="price">16.9</figcaption>
-        </figure>
-        <figure>
-        <img class="img" img src="" alt="">
-        <figcaption class="title">ABURI Tuna</figcaption>
-        <figcaption class="desc">tuna + tempura shrimp + fish egg + teriyaki + mayo</figcaption>
-        <figcaption class="price">17.9</figcaption>
-        </figure>
+    <li>
+    <div class="item-info">
+        <span class="item-name">PHILADELPHIA SALMON MIX</span>
+        <span class="item-desc">philadelphia maki + salmon nigiri</span>
     </div>
+    <span class="item-price">17.9</span>
+    </li>
 
+    <li>
+    <div class="item-info">
+        <span class="item-name">SALMON SASHIMI MIX</span>
+        <span class="item-desc">avocado maki + salmon nigiri + salmon sashimi</span>
+    </div>
+    <span class="item-price">17.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">TUNA SASHIMI MIX</span>
+        <span class="item-desc">tuna avocado maki + tuna nigiri + tuna sashimi</span>
+    </div>
+    <span class="item-price">17.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">NIGIRI MIX</span>
+        <span class="item-desc">salmon + tuna + shrimp + unagi nigiri</span>
+    </div>
+    <span class="item-price">18.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">SASHIMI MIX</span>
+        <span class="item-desc">salmon + tuna sashimi</span>
+    </div>
+    <span class="item-price">18.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">SALMON MIX</span>
+        <span class="item-desc">spicy salmon maki + salmon avocado maki + salmon nigiri + hosomaki</span>
+    </div>
+    <span class="item-price">18.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">TUNA MIX</span>
+        <span class="item-desc">spicy tuna maki + tuna avocado maki + tuna nigiri + hosomaki</span>
+    </div>
+    <span class="item-price">19.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">BENTO BOX</span>
+        <span class="item-desc">sashimi + maki roll + nigiri + chicken karaage</span>
+    </div>
+    <span class="item-price">24.9</span>
+    </li>
+    </ul>
     <h2 class="section-title">MAKI PLATTER</h2>
+    <ul class="menu-list two-column">
+    <li>
+    <div class="item-info">
+        <span class="item-name">FAMILY PLATTER</span>
+        <span class="item-desc">california + spicy california + shiitake + nigiri (salmon + tuna + shrimp)</span>
+    </div>
+    <span class="item-price">34.9</span>
+    </li>
+    <li>
+    <div class="item-info">
+        <span class="item-name">MAKI PLATTER</span>
+        <span class="item-desc">dynamite + california + spicy california + red dragon + hosomaki cucumber</span>
+    </div>
+    <span class="item-price">45.9</span>
+    </li>
+    <li>
+    <div class="item-info">
+        <span class="item-name">GRAND MAKI PLATTER</span>
+        <span class="item-desc">dynamite + california + spicy california + red dragon + salmon avocado + hosomaki salmon + shrimp & salmon nigiri</span>
+    </div>
+    <span class="item-price">68.9</span>
+    </li>
+    <li>
+    <div class="item-info">
+        <span class="item-name">SASHIMI PLATTER</span>
+        <span class="item-desc">salmon & tuna & shrimp nigiri + salmon & tuna sashimi + spicy salmon + hosomaki salmon</span>
+    </div>
+    <span class="item-price">68.9</span>
+    </li>
+    <li>
+    <div class="item-info">
+        <span class="item-name">MAKI & NIGIRI PLATTER</span>
+        <span class="item-desc">dynamite + spicy salmon + ocean rainbow + red dragon + hosomaki salmon + shrimp & tuna & salmon nigiri</span>
+    </div>
+    <span class="item-price">70.9</span>
+    </li>
+    </ul>
+    <h2 class="section-title">ABURI SUSHI</h2>
+    <ul class="menu-list two-column">
+    <li>
+    <div class="item-info">
+        <span class="item-name">ABURI SALMON</span>
+        <span class="item-desc">salmon + tempura shrimp + fish egg + teriyaki + mayo</span>
+    </div>
+    <span class="item-price">16.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">ABURI SHRIMP</span>
+        <span class="item-desc">shrimp + tempura shrimp + fish egg + teriyaki + mayo</span>
+    </div>
+    <span class="item-price">16.9</span>
+    </li>
+
+    <li>
+    <div class="item-info">
+        <span class="item-name">ABURI TUNA</span>
+        <span class="item-desc">tuna + tempura shrimp + fish egg + teriyaki + mayo</span>
+    </div>
+    <span class="item-price">17.9</span>
+    </li>
+    </ul>
+
+    <h2 class="section-title">NOODLES</h2>
+    <p class="section-description">
+    Choose Protein option for following types of noodles: Veggie | Chicken | Pork | Seafood (shrimp + scallop + squid)<br>
+    Additional protein +$3 | Add boiled egg or bean sprout +$1
+    </p>
+    <ul class="menu-list two-column">
+    <li>
+    <div class="item-info">
+        <span class="item-name">KOREAN RAMEN (BEEF BROTH)</span>
+        <span class="item-desc">beef broth base</span>
+    </div>
+    <span class="item-price">13.9</span>
+    </li>
+    <li>
+    <div class="item-info">
+        <span class="item-name">UDON NOODLES (FISH BROTH)</span>
+        <span class="item-desc">fish broth base</span>
+    </div>
+    <span class="item-price">13.9</span>
+    </li>
+    <li>
+    <div class="item-info">
+        <span class="item-name">JAPANESE RAMEN (PORK BROTH)</span>
+        <span class="item-desc">rich pork broth base</span>
+    </div>
+    <span class="item-price">16.9</span>
+    </li>
+    </ul>
+
+    <h2 class="section-title">POKE BOWL</h2>
+    <p class="section-description">
+    All poke bowl have following base:<br>
+    avocado, cucumber, carrot, lettuce, corn, onion, seaweed salad, fish egg, spicy mayo, sriracha<br>
+    Additional protein +$3
+    </p>
+    <ul class="menu-list two-column">
+    <li><div class="item-info"><span class="item-name">EDAMAME POKE BOWL</span></div><span class="item-price">18.9</span></li>
+    <li><div class="item-info"><span class="item-name">TOFU POKE BOWL</span></div><span class="item-price">18.9</span></li>
+    <li><div class="item-info"><span class="item-name">CHICKEN POKE BOWL</span></div><span class="item-price">19.9</span></li>
+    <li><div class="item-info"><span class="item-name">SALMON POKE BOWL</span></div><span class="item-price">19.9</span></li>
+    <li><div class="item-info"><span class="item-name">SHRIMP POKE BOWL</span></div><span class="item-price">19.9</span></li>
+    <li><div class="item-info"><span class="item-name">TUNA POKE BOWL</span></div><span class="item-price">20.9</span></li>
+    <li><div class="item-info"><span class="item-name">SEAFOOD TRIO (SALMON, SHRIMP, TUNA) POKE BOWL</span></div><span class="item-price">23.9</span></li>
+    </ul>
+
+    <h2 class="section-title">SIDE DISHES</h2>
+    <ul class="menu-list two-column">
+    <li><div class="item-info"><span class="item-name">KIMCHI</span></div><span class="item-price">5.9</span></li>
+    <li><div class="item-info"><span class="item-name">SEAWEED SALAD</span></div><span class="item-price">5.9</span></li>
+    <li><div class="item-info"><span class="item-name">EDAMAME</span></div><span class="item-price">5.9</span></li>
+    <li><div class="item-info"><span class="item-name">MISO SOUP</span></div><span class="item-price">2.5</span></li>
+    <li><div class="item-info"><span class="item-name">FRIED BEEF DUMPLINGS</span></div><span class="item-price">7.9</span></li>
+    <li><div class="item-info"><span class="item-name">FRIED SHRIMP</span></div><span class="item-price">2.5</span></li>
+    <li><div class="item-info"><span class="item-name">RICE</span></div><span class="item-price">2.5</span></li>
+    <li><div class="item-info"><span class="item-name">FRIED SPRING ROLL</span></div><span class="item-price">8.9</span></li>
+    <li><div class="item-info"><span class="item-name">CHICKEN KARAAGE</span></div><span class="item-price">14.9</span></li>
+    </ul>
+
+    <!-- <h2 class="section-title">MAKI PLATTER</h2>
     <div class="menu-grid">
         <figure>
         <img class="img" img src="" alt="">
@@ -327,9 +486,9 @@
         <figcaption class="desc">dynamite + spicy salmon + ocean rainbow + red dragon + hosomaki salmon + shrimp & tuna & salmon nigiri</figcaption>
         <figcaption class="price">70.9</figcaption>
         </figure>            
-    </div>
+    </div> -->
 
-    <h2 class="section-title">RICE BOWL</h2>
+    <!-- <h2 class="section-title">RICE BOWL</h2>
         <p class="section-description">All Rice bowl contains following vegetables:<br> mushroom + bean sprout + carrot + onion + broccoli + cabbage + teriyaki + mayo<br><br> Choose Protein option</p>  
     <div class="menu-grid">
         <figure>
@@ -357,9 +516,9 @@
         <figcaption class="title">Seafood Teriyaki bowl</figcaption>
         <figcaption class="price">18.9</figcaption>
         </figure>                               
-    </div>
+    </div> -->
 
-    <h2 class="section-title">NOODLES</h2>
+    <!-- <h2 class="section-title">NOODLES</h2>
     <p class="section-description">Choose Protein option for following types of noodles: Veggie | Chicken | Pork | Seafood (shrimp + scallop + squid)<br> Additional protein is +$3 | Add boiled egg or bean sprout for +$1</p>  
     <div class="menu-grid">
     <figure>
@@ -386,12 +545,12 @@
     <figure>
     <img class="img" src="" alt="Stir-Fried Noodles">
     <figcaption class="title">STIR-FRIED NOODLES</figcaption>
-    <figcaption class="desc">Cabbage, broccoli, mushroom, carrot, onion, bean sprouts</figcaption>
+    <figcaption class="desc">cabbage, broccoli, mushroom, carrot, onion, bean sprouts</figcaption>
     <figcaption class="price">17.9</figcaption>
     </figure>
-    </div>
+    </div> -->
 
-    <h2 class="section-title">POKE BOWL</h2>
+    <!-- <h2 class="section-title">POKE BOWL</h2>
     <p class="section-description">All poke bowl have following base: <br>Avocado, cucumber, carrot, lettuce, corn, onion, seaweed salad, fish egg, spicy mayo, sriracha<br> Additional protein is +$3</p>  
     <div class="menu-grid">
     <figure>
@@ -435,9 +594,9 @@
     <figcaption class="title">TRIO (SALMON, SHRIMP, TUNA) POKE BOWL</figcaption>
     <figcaption class="price">23.9</figcaption>
     </figure>
-    </div>
+    </div> -->
 
-    <h2 class="section-title">SIDE DISHES</h2>
+    <!-- <h2 class="section-title">SIDE DISHES</h2>
     <div class="menu-grid">
     <figure>
     <img class="img" src="" alt="Kimchi">
@@ -492,7 +651,8 @@
     <figcaption class="title">CHICKEN KARAAGE</figcaption>
     <figcaption class="price">14.9</figcaption>
     </figure>
-    </div>
+    </div> -->
+
     </main>
 
     <!-- Scripts -->
